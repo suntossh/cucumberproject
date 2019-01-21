@@ -1,10 +1,10 @@
 package hellocucumber;
 
-import cucumber.api.CucumberOptions;
-import cucumber.api.junit.Cucumber;
-import org.junit.runner.RunWith;
+import org.junit.runner.RunWith; 
+import cucumber.junit.Cucumber; 
 
-@RunWith(Cucumber.class)
-@CucumberOptions(plugin = {"pretty"})
+@RunWith(Cucumber.class) 
+@Cucumber.Options( 
+   format = {"pretty", "json:target/Destination"} ) 
 public class RunCucumberTest {
 }
